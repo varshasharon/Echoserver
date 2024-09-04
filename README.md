@@ -1,4 +1,5 @@
 # Echoserver
+
 Echo server and client using python socket
 
 # AIM:
@@ -11,17 +12,22 @@ To develop a simple webserver to serve html programming pages.
 
 Design of echo server and client using python socket
 
+
 ### Step 2:
 
 Implementation using Python code
+
 
 ### Step 3:
 
 Testing the server and client 
 
+
 ## PROGRAM:
 
+
 ### server.py
+
 ```python
 import socket
 HOST = "127.0.0.1" # Standard loopback interface address (localhost)
@@ -38,7 +44,9 @@ with conn:
       break
       conn.sendall(data)
 ```
+
 ### client.py
+
 ```python
 import socket
 HOST = "127.0.0.1" # The server's hostname or IP address
@@ -50,9 +58,13 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 print(f"Received {data!r}")
 
 ```
+
+
 ## OUTPUT:
+
 ### server.py
 ![image](https://github.com/user-attachments/assets/9af1c138-cd03-4c54-ac6d-318c53e84139)
+
 
 ### client.py
 
@@ -60,4 +72,5 @@ print(f"Received {data!r}")
 
 
 ## RESULT:
+
 The program is executed successfully
